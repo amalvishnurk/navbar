@@ -1,0 +1,63 @@
+#menu{
+    /* to fix the menu content even if we scroll the page */
+    position: fixed;
+    /* as the position is given fixed, top should be set to 0px */
+    /* top can be used only with the position, to avoid the spacing above margin */
+    top: 0px;
+    background-color:bisque;
+    /* to fix to entire width of screen */
+    width: 100%;
+    margin-top: 0px;
+
+
+}
+body{
+    text-align: center;
+    margin: 0px;
+    /* to get background color gradient, refer w3schools.com */
+    background-image: linear-gradient(to right, rgba(255, 208, 0, 0), rgba(255,0,0,1));
+}
+.link{
+    display: inline;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+a{
+    /* to remove underline in 'a tag' */
+    text-decoration: none;
+    color: blueviolet;
+}
+
+html{
+    /* to make the scrolling smooth */
+    scroll-behavior: smooth;
+}
+
+/* pseudoclass
+ syntax::
+        selector:pseudoclass{
+            property:value;
+        }
+*/
+/* hover: name of psuedoclass used for the movement of mouse */
+.link:hover{
+    font-size: 40px;   
+}
+
+/* a:hover{
+    color: red;
+    }
+    since home profile etc is inside a tag we have select the a tag to change the color */
+
+#christ{
+    /* to make position sticky for a content */
+    /* since christ is inside a section called home, the sticky position will disappear after that section */
+    position: sticky;
+
+    top: 0px;
+    background-color: bisque;
+}
+
+
+
